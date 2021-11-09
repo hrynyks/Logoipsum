@@ -1,0 +1,47 @@
+.header {
+    padding: 30px 0 100px;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__item {
+        &-link {
+            font-family: 'DM Sans', sans-serif;
+            font-size: toRem(15);
+            font-weight: 700;
+            line-height: 40px;
+            color: $medium-color;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                color: $dark-color;
+                border-bottom: 2px solid $main-color;
+            }
+        }
+    }
+
+    &__btn {
+        font-family: 'DM Sans', sans-serif;
+        font-size: toRem(17);
+        font-weight: 700;
+        width: 211px;
+        line-height: 60px;
+        letter-spacing: -0.531474px;
+        color: #fff;
+        background-color: $accent-color;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,62 @@
+.metrics {
+    padding-bottom: 138px;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__content {
+        max-width: 430px;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: toRem(50);
+        font-weight: 700;
+        letter-spacing: -1.56316px;
+        color: $dark-color;
+        margin-bottom: 30px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(20);
+        line-height: 30px;
+        letter-spacing: -0.625263px;
+        color: $medium-color;
+        text-align: left;
+        margin-bottom: 30px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__link {
+        font-family: 'DM Sans', sans-serif;
+        font-size: toRem(17);
+        font-weight: 700;
+        letter-spacing: -0.531474px;
+        color: $main-color;
+
+        @include a (tablet-xl) {
+            display: block;
+            text-align: center;
+        }
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}

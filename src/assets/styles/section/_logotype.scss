@@ -1,0 +1,20 @@
+.logotype {
+    padding-bottom: 160px;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        place-items: center;
+
+        @include a (tablet) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @include a (mobile) {
+            grid-template-columns: 130px;
+            justify-content: center;
+            place-content: center;
+        }
+    }
+}

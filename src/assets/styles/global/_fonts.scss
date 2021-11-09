@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url('/src/assets/fonts/Mulish-Regular.woff2') format('woff2'),
+        url('/src/assets/fonts/Mulish-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/src/assets/fonts/DMSans-Bold.woff2') format('woff2'),
+        url('/src/assets/fonts/DMSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
